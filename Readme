@@ -1,0 +1,4 @@
+cp script.sh /opt/
+chmod +x /opt/script.sh
+docker build -f Dockerfile -t django:1 .
+docker run -v /opt/:/opt/ -p 8010:8010 --name django2 django:1
