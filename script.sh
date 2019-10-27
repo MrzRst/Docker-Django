@@ -11,6 +11,6 @@ python3 manage.py migrate
 python3 manage.py createsuperuser
 
 #Step 5 – Run Django Application
-sed "s/ALLOWED_HOSTS = []/ALLOWED_HOSTS = ['0.0.0.0']/g" django_app/settings.py
+sed -i "s/\[]/\['*']/g" django_app/settings.py
 
 python3 manage.py runserver 0.0.0.0:8010
