@@ -15,7 +15,7 @@ RUN pip3 install Django
 COPY /opt/script.sh /opt/script.sh
 RUN chmod +x /opt/script.sh
 CMD ["/opt/script.sh"]
-RUN bash /opt/script.sh
+#RUN bash /opt/script.sh
 
 
 
