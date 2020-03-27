@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Step 3 – Create A Django Application
+mkdir /var/www
 cd /var/www
 django-admin startproject django_app
 cd django_app
